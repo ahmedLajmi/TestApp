@@ -1,0 +1,20 @@
+package home;
+
+
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.AbstractController;
+
+
+
+public class HomeController extends AbstractController {
+	
+	public ModelAndView handleRequestInternal (  ) throws Exception {
+		System.out.print("ok");
+		ModelAndView modelandview = new ModelAndView("home");
+		modelandview.addObject("welcomeMessage", "Hello Ahmed");
+		return modelandview;
+		}
+}
+
+
+
