@@ -1,0 +1,25 @@
+
+<html>
+	<body>
+		<h1> STUDENT ADMISSION FORM ENGINEERING COURSES</h1>
+		<form action="/FirstApp/SubmitAdmissionForm" method="post">
+			<table> 
+				<tr>
+					<td>Student's Name :</td>
+					<td><input type="text" name="studentName" ></td>
+				</tr>
+				<tr>
+					<td>Student's Hobby :</td>
+					<td><input type="text" name="studentHobby" ></td>
+				</tr>
+				<tr>
+					<td>Student's Mobile :</td>
+					<td><input type="text" name="studentMobile" ></td>
+				</tr>
+				
+			</table>
+			<input type="submit" value="Submit this form by clicking here"  />
+			
+		</form>
+	</body>
+</html>

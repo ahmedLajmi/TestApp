@@ -20,7 +20,30 @@
 					${student.studentHobby} 
 				</td>
 			</tr>
-				
+			<tr> 
+				<td>
+					Mobile : 
+				</td>
+				<td>
+					${student.studentMobile} 
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					DOB : 
+				</td>
+				<td>
+					${student.studentDOB} 
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					Skills : 
+				</td>
+				<td>
+					${student.studentSkills} 
+				</td>
+			</tr>
 		</table>
 	</body>
 </html>
