@@ -3,7 +3,7 @@
 	<body>
 		<h1> STUDENT ADMISSION FORM ENGINEERING COURSES</h1>
 		
-		<form:errors path="student.*" />
+		<form:errors path="student1.*" />
 		
 		<form action="/FirstApp/SubmitAdmissionForm" method="post">
 			<table> 

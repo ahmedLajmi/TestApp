@@ -5,14 +5,21 @@ import java.util.List;
 
 import javax.validation.constraints.Size;
 
+
 public class Student {
 
+	@Size(min=2)
 	private String studentName;
 	
-	@Size(min=2,max=20)
+	@Size(min=2,max=5,message="")
 	private String studentHobby;
+	
+	
 	private Long studentMobile;
+	
 	private Date studentDOB;
+	
+	
 	private List<String> studentSkills;
 	
 	public Long getStudentMobile() {
@@ -33,9 +40,7 @@ public class Student {
 	public void setStudentSkills(List<String> studentSkills) {
 		this.studentSkills = studentSkills;
 	}
-	
-	
-	
+		
 	public String getStudentName() {
 		return studentName;
 	}

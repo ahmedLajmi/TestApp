@@ -9,7 +9,7 @@
 					Name : 
 				</td>
 				<td>
-					${student.studentName} 
+					${student1.studentName} 
 				</td>
 			</tr>
 			<tr> 
@@ -17,7 +17,7 @@
 					Hobby : 
 				</td>
 				<td>
-					${student.studentHobby} 
+					${student1.studentHobby} 
 				</td>
 			</tr>
 			<tr> 
@@ -25,7 +25,7 @@
 					Mobile : 
 				</td>
 				<td>
-					${student.studentMobile} 
+					${student1.studentMobile} 
 				</td>
 			</tr>
 			<tr> 
@@ -33,7 +33,7 @@
 					DOB : 
 				</td>
 				<td>
-					${student.studentDOB} 
+					${student1.studentDOB} 
 				</td>
 			</tr>
 			<tr> 
@@ -41,7 +41,7 @@
 					Skills : 
 				</td>
 				<td>
-					${student.studentSkills} 
+					${student1.studentSkills} 
 				</td>
 			</tr>
 		</table>

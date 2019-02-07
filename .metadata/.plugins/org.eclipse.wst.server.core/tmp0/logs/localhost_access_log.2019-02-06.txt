@@ -71,3 +71,14 @@
 0:0:0:0:0:0:0:1 - - [06/Feb/2019:17:22:33 +0100] "POST /FirstApp/SubmitAdmissionForm HTTP/1.1" 200 666
 0:0:0:0:0:0:0:1 - - [06/Feb/2019:17:24:37 +0100] "GET /FirstApp/admissionForm HTTP/1.1" 200 1027
 0:0:0:0:0:0:0:1 - - [06/Feb/2019:17:24:46 +0100] "POST /FirstApp/SubmitAdmissionForm HTTP/1.1" 200 667
+127.0.0.1 - - [06/Feb/2019:17:59:26 +0100] "GET / HTTP/1.1" 404 1005
+0:0:0:0:0:0:0:1 - - [06/Feb/2019:17:59:28 +0100] "GET /FirstApp/ HTTP/1.1" 404 1003
+0:0:0:0:0:0:0:1 - - [06/Feb/2019:17:59:32 +0100] "GET /FirstApp/admissionForm HTTP/1.1" 200 1027
+0:0:0:0:0:0:0:1 - - [06/Feb/2019:17:59:44 +0100] "POST /FirstApp/SubmitAdmissionForm HTTP/1.1" 200 662
+0:0:0:0:0:0:0:1 - - [06/Feb/2019:18:01:31 +0100] "GET /FirstApp/admissionForm HTTP/1.1" 200 1027
+0:0:0:0:0:0:0:1 - - [06/Feb/2019:18:01:38 +0100] "POST /FirstApp/SubmitAdmissionForm HTTP/1.1" 200 649
+0:0:0:0:0:0:0:1 - - [06/Feb/2019:18:01:58 +0100] "POST /FirstApp/SubmitAdmissionForm HTTP/1.1" 200 649
+0:0:0:0:0:0:0:1 - - [06/Feb/2019:18:02:43 +0100] "POST /FirstApp/SubmitAdmissionForm HTTP/1.1" 200 649
+0:0:0:0:0:0:0:1 - - [06/Feb/2019:18:03:12 +0100] "GET /FirstApp/admissionForm HTTP/1.1" 200 1027
+0:0:0:0:0:0:0:1 - - [06/Feb/2019:18:03:23 +0100] "POST /FirstApp/SubmitAdmissionForm HTTP/1.1" 200 667
+0:0:0:0:0:0:0:1 - - [06/Feb/2019:18:03:34 +0100] "POST /FirstApp/SubmitAdmissionForm HTTP/1.1" 200 1380

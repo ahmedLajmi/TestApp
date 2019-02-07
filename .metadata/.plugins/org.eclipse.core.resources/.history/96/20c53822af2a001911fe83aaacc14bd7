@@ -1,0 +1,36 @@
+package home;
+
+import java.util.Date;
+
+@Controller
+public class StudentAdmissionController {
+
+	@InitBinder
+	public void initBinder(WebDataBinder binder) {
+		binder.setDisallowedFields(new String[] {"studentMobile"});
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd**MM**yyyy");
+		dateFormat.setLenient(false);
+		binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
+	}
+	
+	@RequestMapping(value= "/admissionForm", method= RequestMethod.GET)
+	public ModelAndView getAdmissionForm() {
+		
+		ModelAndView model= new ModelAndView("AdmissionForm");
+		return model;
+	}
+	
+	@RequestMapping(value= "/SubmitAdmissionForm", method= RequestMethod.POST)
+	public ModelAndView SubmitAdmissionForm(@Valid @ModelAttribute("student") Student student, BindingResult result) {
+		
+		if(result.hasErrors()) {
+			ModelAndView model = new ModelAndView("AdmissionForm");
+			return model;
+		}
+		
+		ModelAndView model= new ModelAndView("AdmissionSuccess");
+		return model;
+	}
+	
+	
+}
