@@ -1,6 +1,9 @@
 package com.gontuseries.studentadmissioncontroller;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.validation.Valid;
 
@@ -9,10 +12,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -28,8 +34,20 @@ public class StudentAdmissionController {
 	}
 
 	@RequestMapping(value="/admissionForm.html", method = RequestMethod.GET)
-	public ModelAndView getAdmissionForm() {
+	public ModelAndView getAdmissionForm() throws Exception {
 
+		String exceptionOccured = "ArithmeticException";
+		
+		if(exceptionOccured.equalsIgnoreCase("NULL_POINTER")) {
+			throw new NullPointerException("NullPointerException");
+		}
+		else if(exceptionOccured.equalsIgnoreCase("IOException")){
+			throw new IOException("IOException");
+		}
+		else if(exceptionOccured.equalsIgnoreCase("ArithmeticException")) {
+			throw new ArithmeticException("ArithmeticException");
+		}
+		
 		ModelAndView model1 = new ModelAndView("AdmissionForm");
 		
 		return model1;
@@ -54,5 +72,6 @@ public class StudentAdmissionController {
 		return model1;
 	}
 	
+
 }
 

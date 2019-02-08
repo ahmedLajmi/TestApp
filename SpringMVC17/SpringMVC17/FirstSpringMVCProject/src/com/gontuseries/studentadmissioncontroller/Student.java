@@ -7,10 +7,23 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlType;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 
+
+@XmlType(propOrder = {"studentDOB","Student_name","studentMobile","studentAddress","studentHobby","studentSkills"})
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties({"studentSkills","studentAddress"})
+@JsonPropertyOrder({"studentDOB","Student_name","studentMobile","studentAddress","studentHobby","studentSkills"})
 public class Student {
 
+	
+	@JsonProperty("Student_name")
 	@Pattern(regexp="[^0-9]*")
 	private String studentName;
 
