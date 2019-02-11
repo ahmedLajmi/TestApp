@@ -23,7 +23,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Student {
 
 	
-	@JsonProperty("Student_name")
+	@JsonProperty("student_name")
 	@Pattern(regexp="[^0-9]*")
 	private String studentName;
 

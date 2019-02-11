@@ -36,7 +36,7 @@ public class StudentAdmissionController {
 	@RequestMapping(value="/admissionForm.html", method = RequestMethod.GET)
 	public ModelAndView getAdmissionForm() throws Exception {
 
-		String exceptionOccured = "ArithmeticException";
+		String exceptionOccured = "";
 		
 		if(exceptionOccured.equalsIgnoreCase("NULL_POINTER")) {
 			throw new NullPointerException("NullPointerException");
